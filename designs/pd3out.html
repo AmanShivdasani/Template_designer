@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../upload_folder/static/pd3/pd3.css"> 
+</head>
+<body>
+    <nav id="navbar">
+        <div class="text"> 
+        PORTFOLIO
+        </div>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SKILLS</a>
+        <a href="#">SERVICES</a>
+        <a href="#">CONTACT ME</a>
+    </nav>
+    <div id="hero">
+       <span id="i">I'm  </span> <span id="name">{{fname}} {{lname}}</span>
+        <br><div class="line"> {{occupation}}</div>
+         <br><span id="para">{{desc}}</span>
+    </div>
+
+    <div class="images">
+        <img src="../upload_folder/static/pd3/images/{{img}}" class="man">
+    </div>
+    <div id="social">
+        <a href="{{insta}}"><i class="fa-brands fa-instagram"></i></a>
+        <a href="{{snap}}"><i class="fa-brands fa-snapchat"></i></a>
+        <a href="{{linkedin}}" ><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <br> 
+   <a href="{{resume}}"><button>Download CV</button></a>
+
+    <section class="about">
+        <div class="skills">
+            <h2>Skills</h2>
+             <p class="skill">{{skill}}</p>
+             <br>
+             <br>
+        </div>
+        <div class="about-text">
+            <h2> About Me</h2>
+            <p> {{about}}
+            </p>
+        </div>
+    </section>
+
+
+</body>
+</html>

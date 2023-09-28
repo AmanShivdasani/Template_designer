@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design 1</title>
+    <link rel="stylesheet" href="../upload_folder/static/style2.css">
+</head>
+<body>
+    <header class="header1">
+        <img src="../upload_folder/static/images/logo.png" alt="" class="img_logo">
+        <a href="#" class="logo"><span class="span1">VI</span><span class="span2">EW</span><span class="span3">FL</span><span class="span4">EX</span></a>
+    <nav class="navbar1">
+        <a href="/login" class="active">HOME</a>
+        <a href="/style">DESIGNS</a>
+        <a href="/about">ABOUT</a>
+        <a href="/contact">CONTACT US</a>
+    </nav>
+    <div class="bx bx-moon" id="darkMode-icon" ></div>
+    </header> 
+    <div class="form"style="height:fit-content">
+        <form action="/pd2out" method="post" enctype="multipart/form-data">
+            <h3>Enter your First Name:</h3>
+            <input type ="text" required name="name" value="first_name">
+            <h3>Enter your Last Name:</h3>
+            <input type ="text" required name="lname" value="last_name">
+            <h3>Enter your Occupation:</h3>
+            <input type ="text" required name="occupation"value="student">
+            <h3>Enter your College:</h3>
+            <input type ="text" required name="College"value="Unknown">
+            <h3>Enter your City:</h3>
+            <input type ="text" required name="city"value="unknown">
+            <h3>Enter your First Skill:</h3>
+            <input type ="text" required name="skill1"value="skill1">
+            <h3>Enter your Second Skill:</h3>
+            <input type ="text" required name="skill2"value="skill2">
+            <h3>Enter your Third Skill:</h3>
+            <input type ="text" required name="skill3"value="skill3">
+            <h3>Enter your Fourth Skill:</h3>
+            <input type ="text" required name="skill4"value="skill4">
+            <h3>Enter The description</h3>
+            <input type="text" required name ="desc" value="description" id="describe">
+            <h3>Upload Your Image</h3>{{problem}}
+            <input type="file" required name="image" value="image">
+            <h3>Attach your Resume Google Drive link(pdf format):</h3>
+            <input type ="text" required name="resume" value ="https://www.bing.com/ck/a?!&&p=278bfb08301d6584JmltdHM9MTY5NTQyNzIwMCZpZ3VpZD0zM2EzY2U0MC1jMjY1LTZmZWUtMDRlNS1kZDA4YzM2MzZlYTYmaW5zaWQ9NTIxNA&ptn=3&hsh=3&fclid=33a3ce40-c265-6fee-04e5-dd08c3636ea6&psq=google+drive&u=a1aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tLw&ntb=1">
+            <h3>Attach your instagram profile link:</h3>
+            <input type ="text" required name="insta" value="https://www.bing.com/ck/a?!&&p=e77a3b41538faa77JmltdHM9MTY5NTQyNzIwMCZpZ3VpZD0zM2EzY2U0MC1jMjY1LTZmZWUtMDRlNS1kZDA4YzM2MzZlYTYmaW5zaWQ9NTIwOQ&ptn=3&hsh=3&fclid=33a3ce40-c265-6fee-04e5-dd08c3636ea6&psq=instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8_aGw9ZW4&ntb=1">
+            <h3>Attach your snapchat profile link:</h3>
+            <input type ="text" required name="snapchat" value="snapchat">
+            <h3>Attach your gmail profile link:</h3>
+            <input type ="text" required name="gmail" value="gmail">
+            <h3>Attach your linkedin profile link:</h3>
+            <input type ="text" required name="linkedin" value ="https://www.bing.com/ck/a?!&&p=d6627243fd81cdcbJmltdHM9MTY5NTQyNzIwMCZpZ3VpZD0zM2EzY2U0MC1jMjY1LTZmZWUtMDRlNS1kZDA4YzM2MzZlYTYmaW5zaWQ9NTIxOA&ptn=3&hsh=3&fclid=33a3ce40-c265-6fee-04e5-dd08c3636ea6&psq=linkedin&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2xvZ2lu&ntb=1"><br>
+            <input type="submit" required class="hoverbtn">
+            <input type="hidden" name="design" value="pd2">
+        </form>
+    </div>
+</body>
+</html>

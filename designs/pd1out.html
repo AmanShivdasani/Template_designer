@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../upload_folder/static/pd1/pd1.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <a id ="name"><label >{{fname}}</label></a>
+        <a href ="/login"><label>Home</label></a>
+        <a href="#about"><label>About</label></a>
+        <a><label>Portfolio</label></a>
+        <a><label>Content</label></a>
+        <a href="dark_index.html"><label>Dark Mode</label></a>
+    </div>
+<div class="desc">
+    <div class="content">
+        <h4>Hello I am</h4>
+        <h2>{{fname}} <span> {{lname}}</span></h2>
+        <h3>{{occupation}}</h3>
+        <p>{{desc}}</p>
+        <br><a href="{{resume}}" target="_blank" class="resume">View Resume</a><br><br>
+        <span id="social"><a href="{{insta}}" target="_blank"><img src="../upload_folder/static/pd1/images/instagram.png" alt="instagram"></a><a href="{{linkedin}}" target="_blank"><img src="../upload_folder/static/pd1/images/pngwing.com (1).png" alt="linkedin"></a></span>
+    </div>
+    <div class ="profile">
+        <img src ="../upload_folder/static/pd1/images/{{img}}">
+    </div>
+</div>
+</body>
+</html>
